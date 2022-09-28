@@ -1,0 +1,291 @@
+/* apply border-box sizing to all elements */
+
+*,
+::before,
+::after {
+box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+}
+
+main {
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+/* SITE HEADER CSS */
+
+header img {
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.header-desktop {
+    display: none;
+}
+
+section {
+    padding-left: 0;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+/* HEADING BANNER CSS */
+
+.heading-banner {
+    padding: 15px 0 15px 0
+}
+
+.heading-banner img {
+
+    max-height: auto;
+    max-width: 100%;
+    border-radius: 3px;
+    padding: 0px;
+
+
+}
+
+.heading-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 50px;
+    position: absolute;
+    
+}
+
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+section p, section p a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+/* ABOUT US SECTION STYLING */
+
+.about-us {
+    background-color: #f4f4f4;
+    padding: 10px 15px 20px 15px;
+}
+
+.about-us p {
+    line-height: 1.7;
+    font-size: 17px ;
+    color: #858585
+}
+
+.about-us h2 {
+    text-align: left;
+}
+
+.about-us p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* AREAS OF PRACTICE STYLING */
+
+.practice-areas h2, .practice-areas p, .practice-areas i {
+    text-align: center;
+    margin: 10px 0
+}
+
+hr:first-child {
+    margin-top: 20px;
+    width: 60px;
+    border: 2px solid #bba285 
+}
+
+hr:nth-child(3) {
+    margin-bottom: 20px;
+    width: 60px;
+    border: 2px solid #bba285 
+}
+
+
+.practice-area-card {
+    padding: 30px 15px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    
+}
+
+.practice-area-card i {
+    font-size: 64px;
+    width: 100%;
+    color: #ba7e47;
+   
+}
+
+.practice-areas {
+    padding-bottom: 0px;
+}
+
+/* styling for Partner Bio cards */
+
+.attorney-bios h2 {
+    margin: 0px;
+}
+
+.attorney-bios h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.attorney-bios div img {
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.attorney-bio-card{
+    box-shadow: 0 0 35px rgb(10 10 10 / 9%)
+    
+}
+
+.attorney-bio-card p {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.7;
+    color: #858585;
+    font-size: 17px;
+}
+
+.attorney-bio-card a {
+    font-size: 15px; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.attorney-bio-card p:last-child {
+    padding-bottom: 20px;
+    
+}
+
+
+@media screen and (min-width: 40em) {
+   
+   
+    html {
+        
+    }
+    
+
+    .max-width-utility-class {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    
+    .header-mobile {
+        display: none;
+    }
+
+    /*CSS FOR DESKTOP HEADER*/
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .header-desktop {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+
+    .header-office-info {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+
+    }
+
+    .header-office-info-module {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "icon bold-text"
+            "icon normal-text"
+    }
+
+    .office-info-bold-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        grid-area: bold-text;
+        margin-bottom: 0;
+        
+    }
+
+
+    .office-info-plain-text {
+        font-family: 'Poppins', sans-serif;
+        grid-area: normal-text;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .header-office-info-module i {
+        font-size: 24px;
+        grid-area: icon;
+        margin-top: 17px;
+        
+    }
+
+    .header-logo-desktop {
+        max-width: 450px;
+    }
+
+    .practice-areas-flex-container {
+        display: flex ;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+    }
+
+    .practice-area-card {
+        width: 350px;
+        margin-bottom: 40px;
+    }
+
+    /*CSS FOR ABOUT US SECTION*/
+
+    .about-us {
+        background-image: url('img/groupphoto.jpg');
+        height: 600px;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .about-us-text {
+        max-width: 350px;
+    }
+
+
+
+
+
+}
