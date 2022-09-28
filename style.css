@@ -141,16 +141,16 @@ hr:nth-child(3) {
 
 /* styling for Partner Bio cards */
 
-.attorney-bios h2 {
+.attorney-bio-section-title {
     margin: 0px;
 }
 
-.attorney-bios h3 {
+.attorney-bio-name {
     font-size: 25px;
     font-weight: 700;
 }
 
-.attorney-bios div img {
+.attorney-bio-photo {
     width: 100%;
     border-radius: 5px;
     padding-bottom: 10px;
@@ -229,6 +229,7 @@ hr:nth-child(3) {
         grid-template-areas: 
             "icon bold-text"
             "icon normal-text"
+            ;
     }
 
     .office-info-bold-text {
@@ -271,21 +272,79 @@ hr:nth-child(3) {
         margin-bottom: 40px;
     }
 
-    /*CSS FOR ABOUT US SECTION*/
+    /*CSS FOR ABOUT US SECTION ON DESKTOP*/
 
     .about-us {
         background-image: url('img/groupphoto.jpg');
         height: 600px;
         background-position: right;
         background-repeat: no-repeat;
+        margin-bottom: 60px;
     }
 
     .about-us-text {
         max-width: 350px;
     }
 
+    /*CSS FOR MEET THE PARTNERS SECTION ON DESKTOP*/
 
+    .attorney-bios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
 
+    .attorney-bio-section-title {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .attorney-bio-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "bio-photo bio-name bio-name bio-name"
+            "bio-photo bio-info bio-info bio-info"
+            "bio-photo bio-info bio-info bio-info";
+        margin-bottom: 30px;
+        max-width: 950px;
+
+    }
+
+    .attorney-bio-card-right-flip {
+        display: grid;
+        grid-template-columns: 400px 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "bio-name bio-name bio-name bio-photo"
+            "bio-info bio-info bio-info bio-photo"
+            "bio-info bio-info bio-info bio-photo";
+        margin-bottom: 30px;
+
+    }
+    
+    .attorney-bio-photo {
+        grid-area: bio-photo;
+        padding-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .attorney-bio-name {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 45px;
+        padding-top: 20px;
+        grid-area: bio-name;
+        font-size: 30px;
+    }
+
+    .bio-info {
+        grid-area: bio-info;
+        padding-right: 50px;
+        padding-left: 30px;
+    }
 
 
 }
