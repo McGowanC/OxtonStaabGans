@@ -32,13 +32,13 @@ section {
     border-radius: 5px;
 }
 
-/* HEADING BANNER CSS */
+/* MOBILE HEADING BANNER CSS */
 
-.heading-banner {
+.mobile-heading-banner {
     padding: 15px 0 15px 0
 }
 
-.heading-banner img {
+.mobile-heading-banner img {
 
     max-height: auto;
     max-width: 100%;
@@ -47,6 +47,61 @@ section {
 
 
 }
+
+.mobile-logo-menu-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-logo-header {
+    width: 300px;
+}
+
+.mobile-hamburger-menu {
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.mobile-hamburger-line {
+    width: 28px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/* MOBILE NAV BAR STYLING */
+
+.nav-bar-mobile {
+    list-style: none;
+    position: fixed;
+    top:0;
+    right:-200px;
+    background-color: black;
+    margin-top: 0px;
+    padding-top: 100px;
+    height: 100%;
+    width: 200px;
+    color: white;
+    transition: all .5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.show-mobile-menu {
+    right: 0px;
+    box-shadow: 0px 0px 800px 100px grey;
+}
+
+.mobile-nav-item {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    margin-right: 40px;
+}
+
+.close-mobile-menu {
+    font-size: 30px;
+}
+
 
 .heading-banner h2 {
     font-family: 'Playfair Display', serif;
@@ -180,6 +235,26 @@ hr:nth-child(3) {
     
 }
 
+/* STYLING FOR FOOTER MOBILE */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 200px ;
+
+}
+
+.footer-text {
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
 
 @media screen and (min-width: 40em) {
    
@@ -196,7 +271,7 @@ hr:nth-child(3) {
 
 
     
-    .header-mobile {
+    .header-mobile, .mobile-heading-banner {
         display: none;
     }
 
@@ -280,6 +355,7 @@ hr:nth-child(3) {
         background-position: right;
         background-repeat: no-repeat;
         margin-bottom: 60px;
+        margin-top: 50px;
     }
 
     .about-us-text {
@@ -289,7 +365,7 @@ hr:nth-child(3) {
     /*CSS FOR MEET THE PARTNERS SECTION ON DESKTOP*/
 
     .second-hr {
-        padding-bottom: 400px;
+        margin-bottom: 400px;
     }
 
     .attorney-bios {
