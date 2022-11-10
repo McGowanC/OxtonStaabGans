@@ -10,7 +10,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
                
             <div class="header-mobile">
                 <div class="mobile-logo-menu-div">
-                    <a href="index.html"><img class="mobile-logo-header" src="img/OxtonStaabGansLogo3_png.png" alt=""></a>
+                    <img class="mobile-logo-header" src="img/OxtonStaabGansLogo3_png.png" alt="">
                         <div class="mobile-hamburger-menu">
                             <div class="mobile-hamburger-line"></div>
                             <div class="mobile-hamburger-line"></div>
@@ -60,7 +60,9 @@
                     <li class="mobile-nav-item">
                         <div class="close-mobile-menu">X</div>
                     </li>
-                    <li class="mobile-nav-item">Home</li>
+                    <a href="index.html" class="mobile-nav-anchor">
+                        <li class="mobile-nav-item">Home</li>
+                    </a>
                     <a href="about-us.html" class="mobile-nav-anchor">
                         <li class="mobile-nav-item">About Us</li>
                     </a>
@@ -78,7 +80,7 @@
                     <a href="about-us.html" class="desktop-nav-anchor">
                         <li class="desktop-nav-item">About Us</li>
                     </a>
-                    <a href="index.html" class="desktop-nav-anchor">
+                    <a href="attorneys.html" class="desktop-nav-anchor">
                         <li class="desktop-nav-item">Attorneys</li>
                     </a>
                 </div>
@@ -90,21 +92,49 @@
 
         <main>
             <section class='mobile-heading-banner'>
-                <img src="img/partners-group-photo.jpg" alt="">
+                
                 
             </section>
 
-            <section class='about-us-homepage max-width-utility-class'>
-                <h2>About Us</h2>
-                <p class="about-us-homepage-text">
-                    OxtonStaabGans is a collaboration of independent Santa Barbara litigation attorneys with a proven history of delivering high quality, professional legal represntation for family law & divorce cases. Collectively, the law offices of Charles
-                    M. Oxton, Georgia L. Staab, and Eric B. Gans are committed to delivering exceptional results for clients in the areas of family law and civil litigation. 
+            <section class='about-us max-width-utility-class'>
+                <img class="about-us-photo" src="img/oldgroup.jpg">
+                <h2>About OxtonStaabGans</h2>
+                <p class="about-us-text">
+                    Charles M. Oxton, Georgia L. Staab, and Eric B. Gans seek to combine the flexibility and client-centered approach to practicing law that only sole practitioners can offer, with the collective wisdom, skill, and capability of a team. With separate and independent law practices, each attorney is available to clients on an individual basis. However, the attorneys and staff operate in a close collaborative setting, sharing a unified office structure and a consultative “team” approach to resolving difficult legal issues in a responsible and confidential manner.
                 </p>
 
-                <p><a href="">> Learn more about our practice.</a></p>
+                <p class="about-us-text">
+                   
+                    What started more than twenty years ago as a collaboration between Charles M. Oxton and W. Carl Gans lives on today. With Georgia L. Staab opening her practice in the Granada a decade ago, followed more recently by Eric B. Gans, OxtonStaabGans Attorneys represents a two-decade history of delivering exceptional results for clients.
+                </p>
+
             </section>
 
-            <section class='practice-areas max-width-utility-class'>
+            <hr id="carl-hr">
+
+            <section class='in-memorium max-width-utility-class'>
+
+                <h2 class="carl-name">W. Carl Gans</h2>
+                <h3 class="in-memorium-header">In Memorium 1949-2011</h2>
+                <img class="carl-photo" src="img/wcarlgans.webp">
+                <p class="about-us-text">
+                    W. Carl Gans, a prominent Santa Barbara attorney, mediator, and our dear friend, passed away on August 2, 2011.
+                </p>
+                <p class="about-us-text">
+                    Carl earned his BS and MS degrees in mechanical engineering and began his career at Delco Electronics in Goleta, where he worked for 20 years. As he reached his mid thirties, however, he discovered he had a gift for helping people resolve their differences. True to form, despite the demands of working full-time and raising four rambunctious children with his wife Debi, Carl decided to earn his law degree. He attended night classes at the Santa Barbara College of Law, earned his JD and admission to the bar in 1989, and never looked back.
+                </p>
+                <p class="about-us-text">
+                    For the next 22 years of his life, Carl developed a family law and mediation-focused practice in Santa Barbara in close quarters with his great friends Chip Oxton and Georgia Staab, and their loving and loyal staff. For the rest of his life, his professional relationships with his partners, staff, colleagues, and clients would inspire profound happiness in Carl, and a wonderful sense of accomplishment, prompting frequent declarations that he would never completely retire.
+                </p>
+                <p class="about-us-text">
+                    With close friends and family always near, Carl spent the last years of his life in a glow of personal and professional contentment: working, traveling the world, playing golf, gardening, tending to his chickens, and attending church. A loving husband, father, grandfather, son, and brother, Carl is survived by Debi and their four children (and spouses), Lisl (Rhodri), Heidi (fiancé John), Will (Rebecca), and Eric (Kristin); two grandchildren (Rhiannon and Tryfan); his mother, Bucky; his sister, Judy, and brother, Phil; and an enormous community of extended family, dear friends, and respected colleagues and clients. He is sorely missed.
+                </p>
+
+
+            </section>
+
+
+            <!-- <section class='practice-areas max-width-utility-class'>
                 
                 <hr>
                 <h2>Areas of Practice</h2>
@@ -186,7 +216,7 @@
                         <p><a href="">> Read Eric's Full Bio Here</a></p>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <footer>

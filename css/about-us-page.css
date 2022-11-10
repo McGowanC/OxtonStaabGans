@@ -26,6 +26,10 @@ header img {
     display: none;
 }
 
+.nav-bar-desktop-full-width-container {
+    display: none;
+}
+
 section {
     padding-left: 0;
     margin-left: 0px;
@@ -186,7 +190,7 @@ hr:nth-child(3) {
 .practice-area-card i {
     font-size: 64px;
     width: 100%;
-    color: #ba7e47;
+    color: #bba285;
    
 }
 
@@ -275,6 +279,10 @@ footer {
         display: none;
     }
 
+    .nav-bar-desktop-full-width-container {
+        display: block;
+    }
+
     /*CSS FOR DESKTOP HEADER*/
 
     header {
@@ -333,7 +341,48 @@ footer {
 
     .header-logo-desktop {
         max-width: 450px;
+        margin-left: 0px;
     }
+
+    .nav-bar-desktop-full-width-container {
+        background-color: #f7f7f7;
+        width: 100%;
+        border-top: 1px solid rgba(211, 211, 211, .4);;
+        border-bottom: 1px solid rgba(211, 211, 211, .4);
+        margin-top: 20px;
+        position: sticky;
+        top: 0px;
+    }
+
+    .nav-bar-desktop {
+        background-color: #f7f7f7;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        list-style: none;
+        padding: 10px 0 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #969696;
+        column-gap: 50px;
+        
+    }
+
+    .left-menu-items {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 50px;
+    }
+
+    .desktop-nav-item {
+        transition: color .3s;
+    }
+    .desktop-nav-item:hover {
+        color: black;
+    }
+
 
     .practice-areas-flex-container {
         display: flex ;
@@ -350,16 +399,13 @@ footer {
     /*CSS FOR ABOUT US SECTION ON DESKTOP*/
 
     .about-us {
-        background-image: url('img/groupphoto.jpg');
-        height: 600px;
-        background-position: right;
-        background-repeat: no-repeat;
+      
         margin-bottom: 60px;
         margin-top: 50px;
     }
 
     .about-us-text {
-        max-width: 350px;
+        max-width: ;
     }
 
     /*CSS FOR MEET THE PARTNERS SECTION ON DESKTOP*/
@@ -428,3 +474,68 @@ footer {
 
 
 }
+
+
+
+/* DESKTOP ANIMATIONS START HERE */
+
+@keyframes fadeInCraig {
+    from {
+        opacity: 0;
+       
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
+
+.header-mobile {
+    animation-duration: 1s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: 0s
+
+}
+
+.mobile-heading-banner {
+    animation-duration: 1s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .2s
+
+}
+
+.header-desktop {
+    animation-duration: 1s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .2s
+
+}
+
+.nav-bar-desktop-full-width-container {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .2s;
+}
+
+.about-us {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .4s;
+}
+
+.practice-areas {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .6s;
+}
+
+
