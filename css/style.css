@@ -144,16 +144,17 @@ section h3 {
     margin: 0;
 }
 
-/* ABOUT US SECTION STYLING */
+/* ABOUT US HOMEPAGE MOBILE */
 
 .about-us-homepage {
-    background-color: #f4f4f4;12px
+    background-color: #f4f4f4;
     padding: 10px 15px 20px 15px;
+    margin-bottom: 25px;
 }
 
 .about-us-homepage p {
     line-height: 1.7;
-    font-size: 17px ;
+    font-size: 16px ;
     color: #858585
 }
 
@@ -174,7 +175,7 @@ section h3 {
 }
 
 hr:first-child {
-    margin-top: 10px;
+    margin-top: 0px;
     width: 60px;
     border: 2px solid #bba285 
 }
@@ -234,7 +235,7 @@ hr:nth-child(3) {
     padding-right: 20px;
     line-height: 1.7;
     color: #858585;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .attorney-bio-card a {
@@ -421,6 +422,8 @@ footer {
         color: #969696
     }
 
+   
+
     .left-menu-items {
         display: flex;
         justify-content: flex-start;
@@ -434,6 +437,17 @@ footer {
         color: black;
     }
 
+    .contact-desktop {
+        border: 0px solid black;
+        background-color: white;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .contact-desktop:hover {
+        background-color: black;
+        color: white;
+    }
 
     .practice-areas-flex-container {
         display: flex ;
@@ -445,17 +459,20 @@ footer {
     .practice-area-card {
         width: 350px;
         margin-bottom: 40px;
+        box-shadow: 0px 0px 20px rgba(208, 208, 208, .4);
     }
 
-    /*CSS FOR ABOUT US SECTION ON DESKTOP*/
+    /*CSS FOR ABOUT US HOMEPAGE DESKTOP*/
 
     .about-us-homepage {
         background-image: url('/img/groupphoto.jpg');
-        height: 600px;
-        background-position: right;
+        height: 525px;
+        background-position: cover;
         background-repeat: no-repeat;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         margin-top: 50px;
+        /* border: 1px solid rgba(128, 128, 128, .3); */
+        /* box-shadow: 0 0 100px rgba(134, 134, 134, 0.1); */
     }
 
     .about-us-homepage-text {
@@ -466,7 +483,6 @@ footer {
 
     .attorney-bios .second-hr {
         margin-top: 6px;
-        margin-bottom: ;
     }
 
     .attorney-bios {
@@ -490,7 +506,7 @@ footer {
             "bio-photo bio-info bio-info bio-info"
             "bio-photo bio-info bio-info bio-info";
         margin-bottom: 30px;
-        max-width: 1100px;
+        max-width: 950px;
 
     }
     
@@ -520,12 +536,16 @@ footer {
     .about-us-photo {
         display: block;
         padding-top: 30px;
-        width: 80%;
+        width: 900px;
+        height: 525px;
         margin: 0 auto;
+        object-fit: cover;
+        object-position: 0% 40%;
     }
 
     .about-us-text {
         padding: 0 12% 0 12%;
+        font-size: 16px;
     }
 
     #carl-hr {
