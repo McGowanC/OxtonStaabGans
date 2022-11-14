@@ -30,6 +30,10 @@ header img {
     display: none;
 }
 
+.about-us-homepage-photo {
+    display: none;
+}
+
 section {
     padding-left: 0;
     margin-left: 0px;
@@ -384,7 +388,7 @@ footer {
 
     .header-logo-desktop {
         max-width: 450px;
-        margin-left: 0px;
+        margin-left: -30px;
     }
 
     .nav-bar-desktop-full-width-container {
@@ -405,7 +409,7 @@ footer {
         align-items: center;
         font-size: 15px;
         list-style: none;
-        padding: 10px 0 10px 20px;
+        padding: 10px 0 10px 12px;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         color: #969696;
@@ -462,17 +466,38 @@ footer {
         box-shadow: 0px 0px 20px rgba(208, 208, 208, .4);
     }
 
-    /*CSS FOR ABOUT US HOMEPAGE DESKTOP*/
+    /*ABOUT US HOMEPAGE DESKTOP*/
 
     .about-us-homepage {
-        background-image: url('/img/groupphoto.jpg');
-        height: 525px;
-        background-position: cover;
+        /* background-image: linear-gradient(to right, rgba(256, 256,256,1) 27%, rgba(117,19,93,0) 45%),
+                          url('/img/finaltest3.webp'); */
+
+        display: grid;
+        column-gap: 63px;
+        height: 500px;
+        background-size: contain;
         background-repeat: no-repeat;
-        margin-bottom: 30px;
-        margin-top: 50px;
+        background-position: bottom 0px right -50px;
+        background-color: #fff;
+        padding: 10px 15px 0px 15px;
+        margin-top: 30px;
+        grid-template-areas: 
+            "text-wrapper about-us-photo ";
+    
         /* border: 1px solid rgba(128, 128, 128, .3); */
         /* box-shadow: 0 0 100px rgba(134, 134, 134, 0.1); */
+    }
+
+    .about-us-homepage-text-wrapper {
+        grid-area: text-wrapper;
+
+    }
+
+    .about-us-homepage-photo {
+        display: unset;
+        grid-area: about-us-photo;
+        width: 100%;
+        border-radius: 3px;
     }
 
     .about-us-homepage-text {
@@ -541,11 +566,16 @@ footer {
         margin: 0 auto;
         object-fit: cover;
         object-position: 0% 40%;
+        border-radius: 3px;
     }
 
     .about-us-text {
-        padding: 0 12% 0 12%;
-        font-size: 16px;
+        /* max-width: 850px; */
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 0 12% 15px 12%;
+        font-size: 17px;
+        font-weight: 400;
     }
 
     #carl-hr {
@@ -555,6 +585,8 @@ footer {
     .carl-photo {
         float: right;
         padding: 15px;
+        top: 200px;
+        border-radius: 18px;
     }
 }
 
@@ -576,7 +608,7 @@ footer {
 
 
 
-.header-mobile {
+/* .header-mobile {
     animation-duration: 1s;
     animation-name: fadeInCraig;
     animation-fill-mode: backwards; 
@@ -605,7 +637,7 @@ footer {
     animation-name: fadeInCraig;
     animation-fill-mode: backwards; 
     animation-delay: .2s;
-}
+} */
 
 .about-us-homepage {
     animation-duration: 1.25s;
