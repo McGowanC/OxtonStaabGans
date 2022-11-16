@@ -309,7 +309,7 @@ footer {
 
 .attorneys-selection-title {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-top: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
 }
@@ -651,11 +651,36 @@ footer {
 
 /* ATTORNEYS DESKTOP PAGE */
 
-    .attorneys-page-selection-card {
+    .attorneys-selection-div {
+        display: flex;
+        gap: 30px;
+                
+    }
+
+    .attorney-headshot {
+        
+        object-fit:cover;
         
     }
 
+    .attorneys-page-selection-card {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+    }
+
+    .click-for-bio {
+        align-self: flex-end;;
+    }
     
+
+    footer {
+        padding-top: 50px;
+    }
 
 
 }
@@ -713,14 +738,49 @@ footer {
     animation-duration: 1.25s;
     animation-name: fadeInCraig;
     animation-fill-mode: backwards; 
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 
 .practice-areas {
     animation-duration: 1.25s;
     animation-name: fadeInCraig;
     animation-fill-mode: backwards; 
+    animation-delay: .4s;
+}
+
+.about-us-photo {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .2s;
+}
+
+.about-us-title {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .4s;
+}
+
+.about-us-text {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
     animation-delay: .6s;
+}
+
+.attorneys-selection-title {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .2s;
+}
+
+.attorneys-selection-div {
+    animation-duration: 1.25s;
+    animation-name: fadeInCraig;
+    animation-fill-mode: backwards; 
+    animation-delay: .4s;
 }
 
 
