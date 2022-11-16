@@ -305,6 +305,63 @@ footer {
     padding-bottom: 20px;
 }
 
+/* ATTORNEYS MOBILE PAGE */
+
+.attorneys-selection-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+}
+
+.attorneys-page-selection-card {
+    background-color: #f4f4f4;  
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.attorney-headshot {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 25%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.eric-selection {
+    object-position: 0 5%;
+}
+
+.attorney-selection-name {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
+
+.attorney-selection-text {
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.click-for-bio {
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    padding: 15px 0px;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: 1px solid rgba(211, 211, 211, 0.502);
+}
+
+
 
 
 @media screen and (min-width: 40em) {
@@ -443,9 +500,11 @@ footer {
 
     .contact-desktop {
         border: 0px solid black;
-        background-color: white;
-        padding: 5px 15px;
+        background-color: #bba285;
+        color: rgb(23, 17, 12);
+        padding: 5px 20px;
         border-radius: 5px;
+        margin-right: 18px;
     }
 
     .contact-desktop:hover {
@@ -465,6 +524,7 @@ footer {
         margin-bottom: 40px;
         box-shadow: 0px 0px 20px rgba(208, 208, 208, .4);
     }
+
 
     /*ABOUT US HOMEPAGE DESKTOP*/
 
@@ -588,6 +648,16 @@ footer {
         top: 200px;
         border-radius: 18px;
     }
+
+/* ATTORNEYS DESKTOP PAGE */
+
+    .attorneys-page-selection-card {
+        
+    }
+
+    
+
+
 }
 
 

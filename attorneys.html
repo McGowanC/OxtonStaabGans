@@ -10,7 +10,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
                
             <div class="header-mobile">
                 <div class="mobile-logo-menu-div">
-                    <a href="index.html"><img class="mobile-logo-header" src="img/OxtonStaabGansLogo3_png.png" alt=""></a>
+                    <img class="mobile-logo-header" src="img/OxtonStaabGansLogo3_png.png" alt="">
                         <div class="mobile-hamburger-menu">
                             <div class="mobile-hamburger-line"></div>
                             <div class="mobile-hamburger-line"></div>
@@ -60,7 +60,9 @@
                     <li class="mobile-nav-item">
                         <div class="close-mobile-menu">X</div>
                     </li>
-                    <li class="mobile-nav-item">Home</li>
+                    <a href="index.html" class="mobile-nav-anchor">
+                        <li class="mobile-nav-item">Home</li>
+                    </a>
                     <a href="about-us.html" class="mobile-nav-anchor">
                         <li class="mobile-nav-item">About Us</li>
                     </a>
@@ -91,26 +93,36 @@
         </div>
 
         <main>
-            <section class='mobile-heading-banner'>
-                <img src="img/partners-group-photo.jpg" alt="">
-                
-            </section>
 
-<!-- ABOUT US HOMEPAGE DESKTOP -->
+            <section class='attorneys max-width-utility-class'>
+                <h2 class="attorneys-selection-title"> Learn About the Partners</h2>
 
-            <section class='about-us-homepage max-width-utility-class'>
-                <img src="/img/finaltest2.webp" class="about-us-homepage-photo" alt="">
-                <div class="about-us-homepage-text-wrapper">
-                    <h2>About Us</h2>
-                    <p class="about-us-homepage-text">
-                        OxtonStaabGans is a collaboration of independent Santa Barbara litigation attorneys with a proven history of delivering high quality, professional legal represntation for family law & divorce cases. Collectively, the law offices of Charles
-                        M. Oxton, Georgia L. Staab, and Eric B. Gans are committed to delivering exceptional results for clients in the areas of family law and civil litigation.
-                    </p>
-                    <p class="about-us-homepage-link"><a href="/about-us.html">> Learn more about our practice.</a></p>
+                <div class="attorneys-page-selection-card">
+                    <img src="/img/chip-selection.webp" alt="" class="attorney-headshot">
+                    <h3 class="attorney-selection-name">Charles Oxton</h3>
+                    <p class="attorney-selection-text"> Specializing in all aspects of family law and civil litigation, Chip boasts over 40 years experience practicing law. </p>
+                    <p class="attorney-selection-text click-for-bio">Find Chip's full bio here</p>
                 </div>
+
+                <div class="attorneys-page-selection-card">
+                    <img src="/img/georgia-selection.webp" alt="" class="attorney-headshot">
+                    <h3 class="attorney-selection-name">Georgia Staab</h3>
+                    <p class="attorney-selection-text">Over her 22 years as a lawyer, Georgia has devoted herself to representing clients in all aspects of family law - including divorce, child support, and child custody.</p>
+                    <p class="attorney-selection-text click-for-bio">Find Georgia's full bio here</p>
+                </div>
+
+                <div class="attorneys-page-selection-card">
+                    <img src="/img/eric-selection.webp" alt="" class="attorney-headshot eric-selection">
+                    <h3 class="attorney-selection-name">Eric Gans</h3>
+                    <p class="attorney-selection-text">Eric specializes in x y and z.</p>
+                    <p class="attorney-selection-text click-for-bio">Find Eric's full bio here</p>
+                </div>
+
+                
+
             </section>
 
-            <section class='practice-areas max-width-utility-class'>
+            <!-- <section class='practice-areas max-width-utility-class'>
                 
                 <hr>
                 <h2>Areas of Practice</h2>
@@ -192,7 +204,7 @@
                         <p><a href="">> Read Eric's Full Bio Here</a></p>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <footer>
