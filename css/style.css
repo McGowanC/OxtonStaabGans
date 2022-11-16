@@ -444,7 +444,7 @@ footer {
     }
 
     .header-logo-desktop {
-        max-width: 450px;
+        width: 450px;
         margin-left: -30px;
     }
 
@@ -653,7 +653,10 @@ footer {
 
     .attorneys-selection-div {
         display: flex;
-        gap: 30px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;;
+
                 
     }
 
@@ -664,7 +667,8 @@ footer {
     }
 
     .attorneys-page-selection-card {
-        width: 400px;
+        width: 375px;
+        min-width: 375px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
